@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <title>Nivel-1</title>
+  </head>
+  <body>
+    <div id="juegoId" class="juego">
+      <div id="pantalla-titulo"></div>
+      <div class="todosContadores">
+        <div class="score">
+          <span id="scoreId">Score: <b>0/50</b></span>
+        </div>
+        <div class="score">
+          <span id="cajasRestantesId">Faltan: <b>5</b></span>
+        </div>
+        <div class="score">
+          <span id="tiempoId">Time: <b>30</b></span>
+        </div>
+      </div>
+      <div class="container" id="containerId">
+        <div class="contenedor-fps" id="fpsId"></div>
+      </div>
+    </div>
+    <div id="myModal1" class="modal modal-introduccion">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="boton-en-modal">
+          <a href="./index.html" class="modalBoton" id="volver-menu">Volver Menu</a><br /><br />
+        </div>
+        <p class="parrafo-modal">
+          Destruye todos los objetos que aparecen por pantalla haciendo click sobre los mismos.<br /><br />
+          Hazlo en el menor tiempo posible para obtener la máxima puntuación.<br /><br />
+          ¡Atento!<br /><br />
+          El tiempo no para.<br /><br /><br />
+          ¡A ver de lo que eres capaz!
+        </p>
+        <button class="boton-empezar-a-jugar" id="myBtn">JUGAR</button>
+      </div>
+    </div>
+    <div id="myModal2" class="modal modal-final">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="tooltip top">
+          <span class="tiptext">Ranking en desarrollo...</span>
+          <span class="close" id="ranking-boton">&reg;</span>
+        </div>
+        <div id="resultado-partida"></div>
+        <div class="boton-en-modal">
+          <a href="./nivel1.html" class="modalBoton" id="repetir-nivel">Repetir Nivel</a
+          ><br /><br />
+          <a href="./index.html" class="modalBoton" id="volver-menu">Volver Menu</a><br /><br />
+        </div>
+        <div class="boton-siguiente">
+          <a href="./nivel2.html" class="modalBoton" id="next">Next --></a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/buclePrincipal.js"></script>
+  <script src="./js/inicio.js"></script>
+  <script src="./js/dimensiones.js"></script>
+  <script src="./js/caja.js"></script>
+  <script src="./js/nivel1.js"></script>
+  <script src="./js/sonidoNiveles.js"></script>
+</html>
+
+<!-- paginas de utilidad
+https://codepen.io/cooljockey/pen/uyeHz
+http://jsfiddle.net/phpdeveloperrahul/cnLFu/
+https://codepen.io/GreenSock/pen/eZLbOv
+https://stackoverflow.com/questions/21944523/random-movement-in-html5-and-javascript/21944648
+https://danielcwilson.com/blog/2017/06/dynamic-css-variables/
+https://www.youtube.com/watch?v=wMIARRCox9k&ab_channel=WEBCIFAR
+https://www.google.com/search?q=movimiento+randome+js&tbm=isch&ved=2ahUKEwjFyYGx56H0AhVE9IUKHQpvBoUQ2-cCegQIABAA&oq=movimiento+randome+js&gs_lcp=CgNpbWcQAzoICAAQgAQQsQM6BQgAEIAEOgQIABBDOgsIABCABBCxAxCDAToICAAQsQMQgwE6BggAEAgQHlD4CFihKmCDK2gAcAB4AIABogGIAbQOkgEEMjEuMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=7TiWYYWfCMTolwSK3pmoCA&bih=937&biw=1920&rlz=1C1ONGR_esES972ES972#imgrc=QAQDlDFBi5H4QM
+https://programmerclick.com/article/9140586950/
+https://javascript.info/function-basics
+https://www.it-swarm-es.com/es/javascript/posicion-aleatoria-de-divs-en-javascript/972006375/
+https://www.google.com/search?q=OBJECT+in+random+position+and+click+to+remove+app+JAVASCRIPT&rlz=1C1ONGR_esES972ES972&ei=c0CWYfLSJvSXjLsPpYW0oAM&ved=0ahUKEwiy2NHH7qH0AhX0C2MBHaUCDTQQ4dUDCA4&uact=5&oq=OBJECT+in+random+position+and+click+to+remove+app+JAVASCRIPT&gs_lcp=Cgdnd3Mtd2l6EAM6BwgAEEcQsANKBAhBGABQ4ANY4ANg0QRoAHACeACAAWGIAWGSAQExmAEAoAEByAEIwAEB&sclient=gws-wiz
+https://www.youtube.com/watch?v=WLoJugwe-_s&ab_channel=Granosdecaf%C3%A9
+-- DIA 2
+https://www.youtube.com/watch?v=xjcs0E4sy5I
+https://github.com/soydalto/Juego-WEB/blob/master/js/script.js
+https://www.youtube.com/watch?v=w-OKdSHRlfA
+https://www.google.com/search?q=como+hacer+diferentes+niveles+en+un+juego+de+JAVA+SCRIPT&oq=como+hacer+diferentes+niveles+en+un+juego+de+JAVA+SCRIPT&aqs=chrome..69i57.8696j0j4&sourceid=chrome&ie=UTF-8
+https://www.youtube.com/watch?v=0df0NzArPvM
+https://www.youtube.com/watch?v=lF5d5q-E_fA&list=PLN9W6BC54TJLlH57qvG2aN9F99xaAk6Df&index=9
+http://javadevone.com/
+https://github.com/javadevone/juego-web/blob/master/juego-web/js/buclePrincipal.js
+-- DIA 3
+https://www.youtube.com/watch?v=GhePFBkdNYk&ab_channel=CodewithAniaKub%C3%B3w
+https://www.youtube.com/watch?v=UmNHpHcHeLs&list=PLN9W6BC54TJLlH57qvG2aN9F99xaAk6Df&index=27&ab_channel=JavaDevOne
+https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Functions
+-- 
+https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript/Bounce_off_the_walls
+
+-->
